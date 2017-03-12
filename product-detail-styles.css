@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0; /* dont want default padding, will define my own */
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Open Sans, Arial, Verdana; /* Open Sans was used in example */
+    font-size: 14px;
+}
+
+.container-menu {
+    margin-top: 15px; /* From the design I saw around 15px on top */
+    height: 30px;
+    width: 100%;
+    background-color: #F6F6F7; /* From colour schemes */
+}
+
+.container-image {
+    float: left;
+    width: 60%;
+    padding-top: 35px; 
+    margin-bottom: 50px;
+}
+
+.container-image-margin {
+    margin: 0px 10px 0px 30px; /* I have mearsured the margin from the left is 30px, but the example had a horizontal scrollbar */
+    text-align: center; /* center .container-image-float-center in the container */
+}
+
+.container-image-float-center {
+    display:inline-block; /* so the children on the same line */
+    height: auto;
+    width: auto;
+}
+
+.container-information {
+    float: right;
+    width: 40%;
+    padding-top: 36px; 
+}
+
+.container-information-margin {
+    position: absolute;
+    width: 475px;
+    margin-left: -35px; /* measured right margin of 100px but using 40% in .container-information in stead of hard-coding the width */
+    margin-right: 135px;
+    z-index: 1; /* cart-expanded needs to have higher z-index */
+}
+
+img {
+    max-width: 400px; /* I checked the width with Free Ruler */ 
+    height:auto;
+}
+
+.container-main:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.cart-small {
+    font-size: 11px;
+    color: #9ca4ab;
+    float: right;
+    line-height: 30px;
+    margin-right: 105px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 80px;
+}
+
+.cart-small-open {
+    border-top: 1px solid #888888;
+    border-left: 1px solid #888888;
+    border-right: 1px solid #888888;
+    border-bottom: 1px solid #ffffff;
+    color: #222222;
+    background-color: #ffffff;
+}
+
+.cart-small-responsive {
+    display: none;
+}
+
+.cart-expanded {
+    border-top: 1px solid #888888;
+    border-bottom: 1px solid #888888;
+    border-left: 1px solid #888888;
+    border-right: 1px solid #888888;
+    width: 250px;
+    max-width: 250px;
+    position: absolute;
+    right: 105px;
+    top: 46px;
+    padding: 20px 20px 0px 20px;
+    background-color: #ffffff;
+    z-index: 999999;
+}
+
+.cart-expanded-mobile {
+    margin-right: -85px;
+}
+
+.cart-expanded-empty { 
+    margin-bottom: 20px;
+}
+
+.expanded-cart-label {
+    font-weight: bold;
+}
+
+.cart-expanded-small-product-title { 
+    font-size: 12px; 
+    color: #222222; 
+    margin-bottom: 10px;
+}
+
+.cart-expanded-small-product-size {
+    font-size: 10px; 
+    color: #222222; 
+    margin-bottom: 15px; 
+    margin-top: 20px;
+}
+
+.cart-expanded-border-top-part {
+    width: 100px; 
+    float: right; 
+    border-top: 2px solid #ffffff; 
+    margin-top: -21px; 
+    margin-right: -20px;
+}
+
+.cart-expanded-border-top-part-mobile {
+    width: 60px; 
+    float: right; border-top: 2px solid #ffffff; 
+    margin-top: -21px; 
+    margin-right: -20px;
+}
+
+.cart-button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 145px;
+    height: 35px;
+    border: 2px solid #222222;
+    background-color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.cart-button:hover {
+    transition: background-color 0.2s ease;
+    background-color: #222222;
+    color: #ffffff;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    margin-top: -3px;
+    margin-left: -3px;
+    margin-bottom: 20px;
+}
+
+.product-price-container {
+    border-top: 1px solid #CCCCCC; /* as per the instructions but looks darker than example */
+    border-bottom: 1px solid #CCCCCC;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.product-price {
+    color: #222222;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.product-information {
+    margin-top: 20px;
+    color: #888888;
+    font-size: 12px;
+    line-height: 21px;
+    font-weight: normal;
+}
+
+.product-size {
+    margin-top: 30px;
+    color: #888888;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.product-size-required {
+    color: #C90000;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.product-size-button-container {
+    margin-top: 10px;
+}
+
+.product-size-button-container {
+    margin-top: 10px;
+}
+
+.product-size-button {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #888888;
+    background-color: #ffffff;
+    color: #888888;
+    font-size: 10px;
+}
+
+.selected-size {
+    color: #222222;
+    font-weight: bold;
+    border: 3px solid #222222;
+}
+
+@media screen and (max-width: 480px) {
+    .container-image, .container-information {
+        float: none;
+        width: auto;
+    }
+
+    .container-image {
+        padding: 35px 20px 0px 20px;
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container-image-margin {
+        margin: 0px; 
+        text-align: left;
+    }
+
+    .container-image-float-center {
+        display: inline-block; 
+        height: auto;
+    }
+
+    .container-information {
+        width: 100%;
+        padding-top: 0px; 
+        margin-top: -15px; /* I have to reduce 15px margin on top in order to make the container-information matches the design in mobile  */
+    }
+
+    .container-information-margin {
+        width: 100%;
+        text-align: left;
+        margin-left: 0px; 
+        margin-right: 0px;
+        padding-left: 20px; 
+        padding-right: 20px;
+    }
+
+    .cart-small {
+        display: none;
+    }
+
+    .cart-small-responsive {
+        width: 60px;
+        display:block;
+        font-size: 11px;
+        color: #9ca4ab;
+        float: right;
+        line-height: 30px;
+        height: 30px;
+        margin-right: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .cart-small-responsive img {
+        width: 20px;
+        padding: 5px;
+    }
+
+    .cart-small-responsive .cart-count {
+        position: absolute;
+        margin-top: 0px;
+    }
+}
