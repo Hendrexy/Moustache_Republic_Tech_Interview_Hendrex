@@ -1,6 +1,14 @@
 # Moustache_Republic_Tech_Interview_Hendrex
 
-<h2> Things I have achieved in this test</h2>
+<h3> Checklist for the test</h3>
+   <ol>
+      <li>Responsive web design</li>
+      <li>Add to Cart section</li>
+      <li>Mini Cart section</li>
+      <li>JavaScript add to cart functionality</li>
+   </ol>  
+
+
 
 <h3> The content included </h3>
    <ul> 
@@ -9,5 +17,6 @@
      <li> cart-code.js</li>
      <li> product-classic-tee.jpg</li>
      <li> shopping-cart-icon.png</li>
+   </ul>
 
 
