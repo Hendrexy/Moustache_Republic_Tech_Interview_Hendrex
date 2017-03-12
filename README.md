@@ -18,5 +18,7 @@
      <li> product-classic-tee.jpg</li>
      <li> shopping-cart-icon.png</li>
    </ul>
+   
+<h4> Thank you for reading my code! I'm turly passionate about web development and willing go deep into the E-commerce field. </h4>
 
 
